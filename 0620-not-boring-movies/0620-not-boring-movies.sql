@@ -1,6 +1,6 @@
 select id, movie, description, rating from Cinema
-where id%2=1 and description not like '%boring%'
-order by id desc;
+where id%2=1 and description <> 'boring'
+order by rating desc;
 
 -- Synced seamlessly with LeetHub Pro
 -- Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
